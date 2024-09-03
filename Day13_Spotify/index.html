@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="main">
+    <div class="sidebar">
+        <div class="nav"> 
+            <div class="navopt" id="home">
+                <i class="fa-solid fa-house"></i>
+                <a href="#">Home</a>
+            </div>
+            <div class="navopt" id="search" > 
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <a href="#">Search</a>
+            </div>
+        </div>
+        <div class="lib">
+            <div class="libopt" id="library">
+                <img src="library_icon.png" alt="">
+                <a href="#">Your Library</a>
+                <i class="fa-solid fa-plus" id="plus"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </div>
+            <div class="libcont">
+                <div class="create">
+                    <div class="top">Create your first playlist</div>
+                    <div class="bottom">It's easy, we'll help you</div>
+                    
+                    <button class="libbutton">Create playlist</button>
+                </div>
+                <div class="podcast">
+                    <div class="top">Let's find some podcasts to follow</div>
+                    <div class="bottom">We'll keep you updated on new episodes</div>
+                    <button class="libbutton">Browse podcast</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="maincontent">
+        <div class="stickynav">
+            <div id="stickyicon">
+                <span class="material-symbols-outlined">
+                    arrow_back_ios_new
+                    </span>
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                    </span>
+                <button id="navbutton1">Explore Premium</button>
+                <button id="navbutton2">
+                    <i class="fa-regular fa-circle-down"></i>
+                    Install App</button>
+                    <button id="navbutton3">
+                        <i class="fa-regular fa-bell"></i>
+                    </button>
+                    <button id="navbutton4"><i class="fa-solid fa-user"></i></button>
+            </div>
+            <div class="stickybutton">
+                <button id="stickybutton1">All</button>
+                <button id="stickybutton2">Music</button>
+                <button id="stickybutton3">Podcast</button>
+            </div>
+           
+        </div>
+        <div class="album">
+           
+           <h2 class="cardheading">Recently Played</h2>
+           <div class="card-container">
+            <div >
+
+                <img src="card1img.jpeg"  alt="" class="cardimg">
+                
+            </div>
+            <div class="cardtitle">Top 50-Global</div>
+          
+            <div class="cardinfo">All daily update of the most played tracks...</div>
+           </div>
+           <h2 class="cardheading">Trending now near you</h2>
+           <div class="card-container1">
+                <div class="card-container">
+                    <div ><img src="card2img.jpeg" alt="" class="cardimg"></div>
+                    <div class="cardtitle">Mahiye Jinna Sona</div>
+                    
+                    <div class="cardinfo">Spotify</div>
+               </div>
+               <div class="card-container">
+                    <div ><img src="card3img.jpeg" alt="" class="cardimg"></div>
+                    
+                    <div class="cardtitle">Mere Pass Tum H</div>
+                   
+                    <div class="cardinfo">Spotify</div>
+               </div>
+               <div class="card-container">
+                <div ><img src="card4img.jpeg" alt="" class="cardimg"></div>
+                <div class="cardtitle">Alter Ego </div>
+               
+                <div class="cardinfo">Spotify</div>
+               </div>
+               <div class="card-container">
+                <div ><img src="Screenshot 2024-03-27 170650.png" alt="" class="cardimg"></div>
+                <div class="cardtitle">OO's Love</div>
+               
+                <div class="cardinfo">Spotify</div>
+               </div>
+               
+            </div>
+           <h2 class="cardheading"></h2>
+           <div id="footer">
+                <div id="line">
+                    
+                </div>
+           </div>
+        </div>
+    </div>
+    <div class="playbar">
+        <div class="playmusic">
+            <div >
+
+                <img src="card2img.jpeg"  alt="" class="cardimgbar">
+                
+            </div>
+            <div >
+                <div class="cardtitlebar">Mahiye Jinna Sona</div>
+                    
+                    <div class="cardinfobar">Spotify</div>
+            </div>
+            <div class="playmusicicon">
+                <i class="fa-solid fa-circle-plus"></i>
+            </div>
+        </div>
+        <div class="playbuttons">
+            <div class="playbuttonicon">
+                <img src="player_icon1.png" alt="" class="playbuttoniconimg1">
+                <img src="player_icon2.png" alt="" class="playbuttoniconimg2">
+                <img src="player_icon3.png" alt="" class="playbuttoniconimg3">
+                <img src="player_icon4.png" alt="" class="playbuttoniconimg4">
+                <img src="player_icon5.png" alt="" class="playbuttoniconimg5">
+            </div>
+            <div class="playbuttonprog">
+                <div class="playbuttonprogtime">0:00</div>
+                <div><input type="range" min="0" max="100" class="playbuttonprogress" step="1"></div>
+                <div class="playbuttonprogtime">3:14</div>
+            </div>
+        </div>
+        <div class="playendbutton">
+            <img src="Screenshot 2024-03-28 144936.png" alt="" class="playendbuttonimg">
+            <img src="Screenshot 2024-03-28 145012.png" alt="" class="playendbuttonimg">
+            <img src="Screenshot 2024-03-28 145040.png" alt="" class="playendbuttonimg">
+            <img src="Screenshot 2024-03-28 145057.png" alt="" class="playendbuttonimg">
+            <img src="Screenshot 2024-03-28 145835.png" alt="" class="playendbuttonimg">
+            <input type="range" min="0" max="100" class="playbuttonendprogress" step="1">
+            <img src="Screenshot 2024-03-28 145153.png" alt="" class="playendbuttonimg">
+            <img src="Screenshot 2024-03-28 145204.png" alt="" class="playendbuttonimg">
+
+
+        </div>
+    </div>  
+
+    </div>
+</body>
+</html>
+
+<div class="stickyiconimg"><img src="backward_icon.png" alt="" id="stickyiconimage"></div>
+                <div class="stickyiconimg" ><img src="forward_icon.png" alt=""id="stickyiconimage" ></div>
